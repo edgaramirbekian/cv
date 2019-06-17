@@ -15,7 +15,6 @@ import ExperienceData from './Info/experience.json';
 import SkillsData from './Info/skills.json';
 import AwardsData from './Info/awards.json';
 import './App.css';
-import CV from './Components/GetCV/CV';
 
 function App() {
   return (
