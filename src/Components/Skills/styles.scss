@@ -1,0 +1,30 @@
+$primary: #5e42a6;
+$secondary: #b74e91;
+$text-color: #666666;
+
+.skills {
+  width: 100%;
+  margin: 10% auto 5% 0;
+  h1 {
+    background: -webkit-linear-gradient($primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 7%;
+  }
+
+  .skills-icons {
+    padding-left: 0;
+  }
+
+  .devicons {
+    font-size: 500%;
+    background: $text-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover {
+      background: -webkit-linear-gradient($primary, $secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
