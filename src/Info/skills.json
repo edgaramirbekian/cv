@@ -1,0 +1,13 @@
+{
+  "paradigms": ["Declarative-Imperative/Functional-Object Oriented"],
+  "languages": ["JvaScript", "Ruby", "Python", "Shell Script"],
+  "frameworks": ["ReactJS, NodeJS, Ruby on Rails, Django, Flask"],
+  "os": ["GNU/Linux", "Windows", "MacOS"],
+  "db": ["SQLite", "MySQL", "PostgreSQL"],
+  "markup": ["HTML", "CSS/SASS/SCSS", "Markdown"],
+  "data-interchange format": ["JSON", "XML", "YAML"],
+  "network protocols": ["HTTP/S/2.1", "WebSockets", "Pooling/Long", "FTP", "OSI model", "TCP/IP", "UDP", "IPv4/v6", "Onion network", "WLAN/Ethernet", "DNS", "IRC", "DHCP"],
+  "tolls": ["WebPack", "Git", "Docker", "Firebase", "Babel-JSX", "ERB", "Jinja"],
+  "editors": ["JetBrains", "VS Code", "Atom", "Vim", "Nano"],
+  "other": ["Software development methodologies and life cycles, QA and automation methodologies basics"]
+}

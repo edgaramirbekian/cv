@@ -1,0 +1,9 @@
+{
+  "universities": [{
+    "institution": "Yerevan State University",
+    "faculty": "Informatics and Applied Mathematics",
+    "degree": "Bachelor",
+    "started": "2014-2015",
+    "finished": "2017-2020"
+  }]
+}
