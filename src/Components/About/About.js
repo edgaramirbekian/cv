@@ -32,7 +32,7 @@ function About() {
                         <br/>
                         <a className="contact-icon fab fa-github" href='https://github.com/edgaramirbekian'><span className="contact-text">  edgaramirbekian  </span></a>
                         <br/>
-                        <a className="contact-icon fas fa-file-pdf" href='https://github.com/edgaramirbekian/cv/src/Info/resume.pdf'><span className="contact-text">  Get PDF  </span></a>
+                        <a className="contact-icon fas fa-file-pdf" href='https://github.com/edgaramirbekian/cv/blob/master/src/Info/resume.pdf'><span className="contact-text">  Get PDF  </span></a>
                     </h6>
                 </div>
                 <h6 className="made-with">

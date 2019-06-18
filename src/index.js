@@ -8,7 +8,7 @@ import Favicon from 'react-favicon';
 
 const RenderApp = Component => ReactDOM.render(
     <div className="cv-app">
-        <Favicon url="https://github.com/edgaramirbekian/cv/public/favicon.ico" />
+        <Favicon url="https://github.com/edgaramirbekian/cv/blob/master/public/favicon.ico" />
         <Component />
     </div>,
     document.getElementById('root'));
