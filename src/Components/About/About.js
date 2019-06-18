@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.scss';
 import logo from './logo.svg';
+import resume_pdf from  '../../Info/resume.pdf';
 
 function About() {
     return (
@@ -33,7 +34,7 @@ function About() {
                         <a className="contact-icon fab fa-github" href='https://github.com/edgaramirbekian'><span className="contact-text">  edgaramirbekian  </span></a>
                         <br/>
                         <a className="contact-icon fas fa-file-pdf"
-                           href='https://github.com/edgaramirbekian/cv/blob/master/src/Info/resume.pdf'
+                           href={resume_pdf}
                            target="_blank"
                            rel="noopener noreferrer"
                         >
