@@ -101,4 +101,68 @@ a {
 }
 }
 
+@media only screen and (max-device-width: 770px) {
+  .desktop-sidebar {
+    display: none;
+  }
 
+  .mobile-nav {
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+      background-color: transparent;
+    }
+    width: 100%;
+    height: 30%;
+    position: sticky;
+    z-index: 1;
+    .nav-pills {
+      position: relative;
+      margin: 0 0;
+      background: #312450;
+    }
+    .nav-link {
+      &.active {
+        background-image: linear-gradient(to right, #5e42a6, #b74e91)
+      }
+    }
+    .nav-item {
+      width: 100%;
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.4em;
+        color: rgba(#FFF, 0.35);
+        display: block;
+        transition: all ease-out 300ms;
+
+        &.active {
+          color: white;
+        }
+
+        &:not(.active)::after {
+          opacity: 0.2;
+        }
+
+        &:not(.active):hover {
+          color: rgba(#FFF, 0.75);
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 0.2em;
+          background: black;
+          left: 0;
+          bottom: 0;
+          background-image: linear-gradient(to right, #5e42a6, #b74e91)
+        }
+      }
+    }
+  }
+
+}
+
+@media only screen and (min-device-width: 770px) {
+  .mobile-nav {
+    display: none;
+  }
+}

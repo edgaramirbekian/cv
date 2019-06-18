@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {Nav} from 'react-bootstrap';
+import Dropdown from 'react-bootstrap/Dropdown';
+import DropdownButton from 'react-bootstrap/DropdownButton';
 import About from './Components/About/About';
 import Education from './Components/Education/Education';
 import Experience from './Components/Experience/Experience';
@@ -31,31 +33,46 @@ function App() {
       <HashRouter basename={process.env.PUBLIC_URL}>
           <Container id="main-cont">
               <Row>
-                  <Col sm={4}>
+                  <Col sm={4} className="desktop-sidebar">
                       <div className="sidebar">
                           <nav className="nav">
                               <ul>
-                              {routes.map(route => (
-                                  <React.Fragment>
-                                  {/*<ul>*/}
-                                      <li>
-                                          <Nav.Link
-                                              key={route.path}
-                                              as={NavLink}
-                                              to={route.path}
-                                              activeClassName="active"
-                                              exact
-                                          >
-                                              {route.name}
-                                          </Nav.Link>
-                                      </li>
-                                  {/*</ul>*/}
-                                  </React.Fragment>
-                              ))}
+                                  {routes.map(route => (
+                                      <React.Fragment>
+                                          <li>
+                                              <Nav.Link
+                                                  key={route.path}
+                                                  as={NavLink}
+                                                  to={route.path}
+                                                  activeClassName="active"
+                                                  exact
+                                              >
+                                                  {route.name}
+                                              </Nav.Link>
+                                          </li>
+                                      </React.Fragment>
+                                  ))}
                               </ul>
                           </nav>
                       </div>
                   </Col>
+                  <div className="mobile-nav">
+                      <Nav variant="pills" defaultActiveKey="/">
+                          {routes.map(route => (
+                              <Nav.Item>
+                                  <Nav.Link
+                                      key={route.path}
+                                      as={NavLink}
+                                      to={route.path}
+                                      activeClassName="active"
+                                      exact
+                                  >
+                                      {route.name}
+                                  </Nav.Link>
+                              </Nav.Item>
+                            ))}
+                      </Nav>
+                  </div>
                   <Col sm={8} >
                       {routes.map(({ path, Component, Data }) => (
                           <Route key={path} exact path={path}>
