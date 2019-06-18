@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, NavLink } from "react-router-dom";
+import { HashRouter, Route, NavLink } from "react-router-dom";
 import { CSSTransition } from 'react-transition-group'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -28,7 +28,7 @@ const routes = [
 
 function App() {
   return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
           <Container id="main-cont">
               <Row>
                   <Col sm={4}>
@@ -76,7 +76,7 @@ function App() {
                   </Col>
             </Row>
         </Container>
-      </BrowserRouter>
+      </HashRouter>
 
   );
 }
