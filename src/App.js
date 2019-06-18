@@ -18,7 +18,7 @@ import AwardsData from './Info/awards.json';
 import './App.scss';
 
 const routes = [
-    { path: '', name: 'About', Component: About},
+    { path: '/', name: 'About', Component: About},
     { path: '/edu', name: 'Education', Component: Education, Data: EducationData },
     { path: '/experience', name: 'Experience', Component: Experience, Data: ExperienceData },
     { path: '/skills', name: 'Skills', Component: Skills, Data: SkillsData },
