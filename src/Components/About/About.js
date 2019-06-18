@@ -18,9 +18,7 @@ function About() {
             <div className="info">
                 <p className="letter">
                     Organized and motivated software developer seeking to work closely with
-                    <br/>
                     a team of experienced engineers to create a products which have an impact,
-                    <br/>
                     skilled in Web Development(Ruby on Rails, NodeJS, ReactJS, Django, Flask).
                 </p>
                 <div className="contact">
@@ -33,6 +31,8 @@ function About() {
                         <a className="contact-icon fas fa-envelope" href='mailto:amirbekyanedgar@gmail.com'><span className="contact-text">  amirbekyanedgar@gmail.com  </span></a>
                         <br/>
                         <a className="contact-icon fab fa-github" href='https://github.com/edgaramirbekian'><span className="contact-text">  edgaramirbekian  </span></a>
+                        <br/>
+                        <a className="contact-icon fas fa-file-pdf" href='https://github.com/edgaramirbekian/cv/src/Info/resume.pdf'><span className="contact-text">  Get PDF  </span></a>
                     </h6>
                 </div>
                 <h6 className="made-with">
