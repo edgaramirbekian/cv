@@ -42,32 +42,32 @@ html {
 }
 
 .sidebar {
-    position: fixed;
-    width: 25%;
-    height: 100vh;
+    position: absolute;
+    width: 85%;
+    height: 100vmin;
     background: #312450;
     font-size: 0.65em;
 }
 
 .nav {
-    position: relative;
+    height: 100vmin;
+    position: absolute;
     margin: 0 15%;
-    text-align: right;
-    top: 50%;
-    transform: translateY(-50%);
+    text-align: center;
     font-weight: bold;
 }
 
 .nav ul {
+    height: 100vmin;
     width: 100%;
     list-style: none;
 
 li {
     position: relative;
-    margin: 3.2em 0;
+    margin: 8vmin 0;
 
 a {
-    line-height: 5em;
+    line-height: 5vmin;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.4em;

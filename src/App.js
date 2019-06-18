@@ -32,30 +32,31 @@ function App() {
           <Container id="main-cont">
               <Row>
                   <Col sm={4}>
-                      <main className="main">
-                          <aside className="sidebar">
-                              <nav className="nav">
-                                  {routes.map(route => (
-                                      <ul>
-                                          <li>
-                                              <Nav.Link
-                                                  key={route.path}
-                                                  as={NavLink}
-                                                  to={route.path}
-                                                  activeClassName="active"
-                                                  exact
-                                              >
-                                                  {route.name}
-                                              </Nav.Link>
-                                          </li>
-                                      </ul>
-                                  ))}
-                              </nav>
-                          </aside>
-                      </main>
+                      <div className="sidebar">
+                          <nav className="nav">
+                              <ul>
+                              {routes.map(route => (
+                                  <React.Fragment>
+                                  {/*<ul>*/}
+                                      <li>
+                                          <Nav.Link
+                                              key={route.path}
+                                              as={NavLink}
+                                              to={route.path}
+                                              activeClassName="active"
+                                              exact
+                                          >
+                                              {route.name}
+                                          </Nav.Link>
+                                      </li>
+                                  {/*</ul>*/}
+                                  </React.Fragment>
+                              ))}
+                              </ul>
+                          </nav>
+                      </div>
                   </Col>
                   <Col sm={8} >
-                      {/*<Switch>*/}
                       {routes.map(({ path, Component, Data }) => (
                           <Route key={path} exact path={path}>
                               {({ match }) => (
@@ -72,7 +73,6 @@ function App() {
                               )}
                           </Route>
                       ))}
-                      {/*</Switch>*/}
                   </Col>
             </Row>
         </Container>
