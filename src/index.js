@@ -5,11 +5,10 @@ import App from './App';
 // import * as serviceWorker from './serviceWorker';
 import Boostrap from 'bootstrap/dist/css/bootstrap.css';
 import Favicon from 'react-favicon';
-import hacker_icon from './Info/resume.pdf';
 
 const RenderApp = Component => ReactDOM.render(
     <div className="cv-app">
-        <Favicon url={hacker_icon} />
+        <Favicon url={"https://raw.githubusercontent.com/edgaramirbekian/cv/master/public/favicon.ico"} />
         <Component />
     </div>,
     document.getElementById('root'));
