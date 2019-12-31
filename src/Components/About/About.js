@@ -19,7 +19,7 @@ function About() {
             <div className="info">
                 <p className="letter">
                     Organized and motivated software developer seeking to work closely with
-                    a team of experienced engineers to create a products which have an impact,
+                    a team of experienced engineers to create products which have an impact,
                     skilled in Web Development(Ruby on Rails, NodeJS, ReactJS, Django, Flask).
                 </p>
                 <div className="contact">
